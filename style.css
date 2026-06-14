@@ -190,3 +190,174 @@ footer {
     font-size: 14px;
     line-height: 2;
 }
+
+/* Article Pages */
+.article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.article-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.article-tag {
+    color: #c9a84c;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0d8c8;
+    padding-bottom: 20px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.recipe-title {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin: 40px 0 20px;
+    border-left: 4px solid #c9a84c;
+    padding-left: 16px;
+}
+
+.recipe-subtitle {
+    font-size: 18px;
+    color: #c9a84c;
+    margin: 20px 0 10px;
+}
+
+.recipe-list {
+    color: #444;
+    font-size: 17px;
+    line-height: 2;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.recipe-note {
+    font-style: italic;
+    color: #888;
+    margin: 20px 0 40px;
+}
+
+.logo a {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #c9a84c;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c9a84c;
+    padding-bottom: 3px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-name {
+        font-size: 40px;
+    }
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .portfolio {
+        padding: 60px 20px;
+    }
+
+    .portfolio-card {
+        max-width: 100%;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .article {
+        padding: 60px 20px;
+    }
+
+    .article-title {
+        font-size: 32px;
+    }
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #e0d8c8;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #1a1a1a;
+    border-radius: 2px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#submit-btn {
+    background-color: #1a1a1a;
+    color: #c9a84c;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #c9a84c;
+    color: #1a1a1a;
+}
+
+#form-status {
+    text-align: center;
+    margin-top: 15px;
+    color: #c9a84c;
+    font-size: 16px;
+}
