@@ -16,7 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     }
     
     // Send via EmailJS
-    emailjs.send("service_5an9bcm", "template_252kzzv", {
+    emailjs.send("service_9cd9884", "template_252kzzv", {
         from_name: name,
         from_email: email,
         subject: subject,
