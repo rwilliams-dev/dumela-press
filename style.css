@@ -168,6 +168,30 @@ body {
     margin-top: 10px;
 }
 
+/* View All Stories Button */
+.view-all-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border: 1px solid #c9a84c;
+    color: #c9a84c;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #c9a84c;
+    color: #1a1a1a;
+}
+
 /* Contact */
 .contact {
     padding: 100px 60px;
@@ -261,6 +285,98 @@ footer {
     padding-bottom: 3px;
 }
 
+/* Stories Index Page */
+.stories-hero {
+    padding: 80px 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stories-hero h1 {
+    font-size: 52px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.stories-hero p {
+    font-size: 18px;
+    color: #888;
+    line-height: 1.8;
+}
+
+.stories-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 60px 100px;
+}
+
+.story-item {
+    padding: 40px 0;
+    border-bottom: 1px solid #e0d8c8;
+}
+
+.story-item:last-child {
+    border-bottom: none;
+}
+
+.story-tag {
+    color: #c9a84c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.story-title {
+    font-size: 26px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.story-excerpt {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    max-width: 600px;
+}
+
+.story-link {
+    color: #c9a84c;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.story-link:hover {
+    text-decoration: underline;
+}
+
+/* Article Hero Image */
+.article-image {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 50px;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    color: #c9a84c;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .navbar {
@@ -305,6 +421,18 @@ footer {
 
     .article-title {
         font-size: 32px;
+    }
+
+    .stories-hero {
+        padding: 60px 20px 30px;
+    }
+
+    .stories-hero h1 {
+        font-size: 36px;
+    }
+
+    .stories-list {
+        padding: 20px 20px 60px;
     }
 }
 
