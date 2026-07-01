@@ -34,3 +34,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         statusElement.style.color = "red";
     });
 });
+
+function toggleNav() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
