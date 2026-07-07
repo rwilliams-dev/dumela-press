@@ -28,7 +28,7 @@ body {
 .logo {
     font-family: Georgia, serif;
     font-size: 24px;
-    color: #c9a84c;
+    color: #1b7f8c;
     letter-spacing: 3px;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #c9a84c;
+    color: #1b7f8c;
 }
 
 /* Hero */
@@ -56,7 +56,7 @@ body {
     font-size: 16px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #c9a84c;
+    color: #1b7f8c;
     margin-bottom: 15px;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .hero-title {
     font-size: 22px;
-    color: #c9a84c;
+    color: #1b7f8c;
     font-weight: normal;
     margin-bottom: 25px;
 }
@@ -135,7 +135,7 @@ body {
     background-color: #2a2a2a;
     padding: 40px;
     max-width: 340px;
-    border-top: 3px solid #c9a84c;
+    border-top: 3px solid #1b7f8c;
 }
 
 .portfolio-card h3 {
@@ -152,7 +152,7 @@ body {
 }
 
 .tag {
-    background-color: #c9a84c;
+    background-color: #1b7f8c;
     color: #1a1a1a;
     padding: 4px 12px;
     font-size: 12px;
@@ -161,7 +161,7 @@ body {
 }
 
 .portfolio-card a {
-    color: #c9a84c;
+    color: #1b7f8c;
     text-decoration: none;
     font-size: 14px;
     display: block;
@@ -177,8 +177,8 @@ body {
 .view-all-btn {
     display: inline-block;
     padding: 14px 40px;
-    border: 1px solid #c9a84c;
-    color: #c9a84c;
+    border: 1px solid #1b7f8c;
+    color: #1b7f8c;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 2px;
@@ -188,7 +188,7 @@ body {
 }
 
 .view-all-btn:hover {
-    background-color: #c9a84c;
+    background-color: #1b7f8c;
     color: #1a1a1a;
 }
 
@@ -203,6 +203,61 @@ body {
     color: #555;
     font-size: 18px;
     margin-top: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #1a1a1a;
+    background-color: #fff;
+    border: 1px solid #e0d8c8;
+    border-radius: 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1b7f8c;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #1a1a1a;
+    color: #1b7f8c;
+    padding: 14px 40px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #1b7f8c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1b7f8c;
+    color: #1a1a1a;
+}
+
+#form-status {
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 /* Footer */
@@ -251,7 +306,7 @@ footer {
 }
 
 .article-tag {
-    color: #c9a84c;
+    color: #1b7f8c;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -271,13 +326,13 @@ footer {
     font-size: 28px;
     color: #1a1a1a;
     margin: 40px 0 20px;
-    border-left: 4px solid #c9a84c;
+    border-left: 4px solid #1b7f8c;
     padding-left: 16px;
 }
 
 .recipe-subtitle {
     font-size: 18px;
-    color: #c9a84c;
+    color: #1b7f8c;
     margin: 20px 0 10px;
 }
 
@@ -298,11 +353,11 @@ footer {
 .logo a {
     font-family: Georgia, serif;
     font-size: 22px;
-    color: #c9a84c;
+    color: #1b7f8c;
     text-decoration: none;
     letter-spacing: 4px;
     text-transform: uppercase;
-    border-bottom: 1px solid #c9a84c;
+    border-bottom: 1px solid #1b7f8c;
     padding-bottom: 3px;
 }
 
@@ -341,7 +396,7 @@ footer {
 }
 
 .story-tag {
-    color: #c9a84c;
+    color: #1b7f8c;
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -365,7 +420,7 @@ footer {
 }
 
 .story-link {
-    color: #c9a84c;
+    color: #1b7f8c;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
@@ -387,7 +442,7 @@ footer {
 /* Back Link */
 .back-link {
     display: inline-block;
-    color: #c9a84c;
+    color: #1b7f8c;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
@@ -432,7 +487,7 @@ footer {
         display: block;
         background: none;
         border: none;
-        color: #c9a84c;
+        color: #1b7f8c;
         font-size: 1.5rem;
         cursor: pointer;
         margin-left: auto;
@@ -444,6 +499,10 @@ footer {
 
     .hero-name {
         font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 30px;
     }
 
     .about {
@@ -460,6 +519,10 @@ footer {
 
     .contact {
         padding: 60px 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
     }
 
     .article {
