@@ -215,6 +215,27 @@ footer {
     line-height: 2;
 }
 
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1b7f8c;
+}
+
+.form-consent {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.form-consent a {
+    color: #1b7f8c;
+}
+
 /* Article Pages */
 .article {
     max-width: 720px;
