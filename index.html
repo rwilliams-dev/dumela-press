@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumela Press</title>
+    <title>Dumela Press — East African Food Culture & Culinary Storytelling</title>
+    <meta name="description" content="International chef, cookbook author, and food writer telling the stories behind East African food culture — recipes, essays, and brand storytelling with real depth.">
+    <meta name="theme-color" content="#171512">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171512'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%232b97a6' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- EmailJS Library -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -17,7 +23,7 @@
         <div class="logo">
             <a href="index.html">Dumela Press</a>
         </div>
-        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
         <div class="nav-links">
             <a href="#about">Meet The Author</a>
             <a href="stories.html">All Stories</a>
@@ -32,12 +38,16 @@
             <h1 class="hero-name">Dumela Press</h1>
             <h2 class="hero-title">International Chef, Cookbook Author, & Food Writer</h2>
             <p class="hero-des">I'm an International Chef and cookbook author who helps culinary brands and food publications tell compelling stories — from cutting-edge industry trends to the cultural roots behind great food.</p>
+            <div class="hero-buttons">
+                <a href="stories.html" class="btn-primary">Read The Stories</a>
+                <a href="#contact" class="btn-secondary">Work With Me</a>
+            </div>
         </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-        <div class="about-content">
+        <div class="about-content reveal">
             <h2 class="section-title">Meet The Author</h2>
             <p>I'm a professional chef, cookbook author, and food writer based in the San Francisco Bay Area with a deep connection to East Africa. Food has always been my love language. I've spent years in kitchens out on grills, and long nights being kept warm by offset smokers mastering my craft, building a catering brand, and documenting the stories behind the dishes I cook and love. That same intimacy with storytelling is what drives my writing, I don't just describe food, I trace where it comes from, what it means to the people who eat it, and why it matters. My passion for food is worldwide, but I have a special interest in East African food culture, the flavors, traditions, and histories that don't get enough space in mainstream food media. From Fish and Ugali in Kisumu along the Lake Victoria shores, to Githeri and Chapati at the foot of Mount Kenya, Matoke in Kisii, and great Seafood on the Kilifi coast, these are stories worth telling, and I tell them from the heart, through the people who have cooked these meals for generations, eaten them with loved ones, and built brands selling these foods within their communities to those that have taken their family's recipes to international locations. I'm building my life around these dishes and documenting the journey. I write for culinary brands, food publications, and businesses that want content with real depth, not generic copy, but writing that makes people feel something. If your brand has a story worth telling, let's talk.</p>
         </div>
@@ -45,43 +55,60 @@
 
     <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
-        <h2 class="section-title">Writing Portfolio</h2>
-        <p class="section-subtitle">Selected works in food culture, brand storytelling, and culinary narrative.</p>
-        
+        <p class="section-kicker reveal">Selected Works</p>
+        <h2 class="section-title reveal">Writing Portfolio</h2>
+        <p class="section-subtitle reveal">Selected works in food culture, brand storytelling, and culinary narrative.</p>
+
         <div class="portfolio-grid">
-            <div class="portfolio-card">
-                <h3>Oven-Baked Whole Tilapia with Crispy Cassava Fries</h3>
-                <p>A Kisumu staple made without the deep fryer — whole tilapia roasted until the skin crisps, served with cassava fries and a palate-refreshing kachumbari.</p>
-                <span class="tag">Recipe & Narrative</span>
-                <a href="tilapia.html">Read More</a>
+            <div class="portfolio-card reveal">
+                <div class="card-image">
+                    <img src="images/tilapia.png" alt="Oven-baked whole tilapia with crispy cassava fries and kachumbari" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="tag">Recipe & Narrative</span>
+                    <h3>Oven-Baked Whole Tilapia with Crispy Cassava Fries</h3>
+                    <p>A Kisumu staple made without the deep fryer — whole tilapia roasted until the skin crisps, served with cassava fries and a palate-refreshing kachumbari.</p>
+                    <a href="tilapia.html">Read More</a>
+                </div>
             </div>
 
-           <div class="portfolio-card">
-                <h3>Chapati, or: Why Are You Rushing, Bro?</h3>
-                <p>I threw out whole batches of dough. I almost gave up. How a chef learned to stop rushing — and how a flatbread rode a steam engine all the way to Kisumu.</p>
-                <span class="tag">Recipe & Narrative</span>
-                <a href="chapati.html">Read More</a>
+            <div class="portfolio-card reveal">
+                <div class="card-image">
+                    <img src="images/chapati.png" alt="A stack of golden, layered East African chapati" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="tag">Recipe & Narrative</span>
+                    <h3>Chapati, or: Why Are You Rushing, Bro?</h3>
+                    <p>I threw out whole batches of dough. I almost gave up. How a chef learned to stop rushing — and how a flatbread rode a steam engine all the way to Kisumu.</p>
+                    <a href="chapati.html">Read More</a>
+                </div>
             </div>
 
-            <div class="portfolio-card">
-                <h3>Smoked Turkey: A Holiday Tradition Reimagined</h3>
-                <p>From childhood smoked drumsticks at the fair to smoking a 20lb bird for the holidays — the personal story behind a recipe that now has people calling every Thanksgiving and Christmas.</p>
-                <span class="tag">Recipe & Narrative</span>
-                <a href="smoked-turkey.html">Read More</a>
+            <div class="portfolio-card reveal">
+                <div class="card-image">
+                    <img src="images/smoked-turkey.png" alt="A whole spatchcocked smoked turkey with a deep mahogany bark" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="tag">Recipe & Narrative</span>
+                    <h3>Smoked Turkey: A Holiday Tradition Reimagined</h3>
+                    <p>From childhood smoked drumsticks at the fair to smoking a 20lb bird for the holidays — the personal story behind a recipe that now has people calling every Thanksgiving and Christmas.</p>
+                    <a href="smoked-turkey.html">Read More</a>
+                </div>
             </div>
         </div>
 
-        <div class="view-all-wrap">
+        <div class="view-all-wrap reveal">
             <a href="stories.html" class="view-all-btn">View All Stories →</a>
         </div>
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-        <h2 class="section-title">Let's Cook Something Up</h2>
-        <p class="section-subtitle">Let's Create A Great Story For Your Brand</p>
-        
-        <form class="contact-form" id="contactForm">
+        <p class="section-kicker reveal">Get In Touch</p>
+        <h2 class="section-title reveal">Let's Cook Something Up</h2>
+        <p class="section-subtitle reveal">Let's Create A Great Story For Your Brand</p>
+
+        <form class="contact-form reveal" id="contactForm">
             <div class="form-group">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>

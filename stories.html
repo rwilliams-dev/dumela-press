@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stories — Dumela Press</title>
+    <meta name="description" content="Food culture essays, recipe narratives, brand stories, and dispatches from the Road to Kisumu.">
+    <meta name="theme-color" content="#171512">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171512'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%232b97a6' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +19,7 @@
         <div class="logo">
             <a href="index.html">Dumela Press</a>
         </div>
-        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
         <div class="nav-links">
             <a href="index.html#about">Meet The Author</a>
             <a href="stories.html">All Stories</a>
@@ -30,40 +36,64 @@
     <!-- STORIES LIST -->
     <div class="stories-list">
 
-        <div class="story-item">
-            <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
-            <h2 class="story-title">Chapati, or: Why Are You Rushing, Man?</h2>
-            <p class="story-excerpt">I threw out whole batches of dough. I almost gave up. The story of how a chef learned to stop rushing — and how a South Asian flatbread rode a steam engine all the way to the city I'm about to call home. With the recipe that finally got it right.</p>
-            <a href="chapati.html" class="story-link">Read More →</a>
+        <div class="story-item reveal">
+            <a href="chapati.html" class="story-thumb" tabindex="-1" aria-hidden="true">
+                <img src="images/chapati.png" alt="" loading="lazy">
+            </a>
+            <div class="story-body">
+                <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
+                <h2 class="story-title">Chapati, or: Why Are You Rushing, Man?</h2>
+                <p class="story-excerpt">I threw out whole batches of dough. I almost gave up. The story of how a chef learned to stop rushing — and how a South Asian flatbread rode a steam engine all the way to the city I'm about to call home. With the recipe that finally got it right.</p>
+                <a href="chapati.html" class="story-link">Read More →</a>
+            </div>
         </div>
 
-         <div class="story-item">
-            <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
-            <h2 class="story-title">The Bhajia War</h2>
-            <p class="story-excerpt">I posted the video like it was any other post. I woke up at 2am to a comment section at war. What followed was a lesson in food, culture, and why getting the story right matters — and a recipe for Nairobian Bhajia that started it all.</p>
-            <a href="bhajia.html" class="story-link">Read More →</a>
+        <div class="story-item reveal">
+            <a href="bhajia.html" class="story-thumb" tabindex="-1" aria-hidden="true">
+                <img src="images/bhajia.png" alt="" loading="lazy">
+            </a>
+            <div class="story-body">
+                <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
+                <h2 class="story-title">The Bhajia War</h2>
+                <p class="story-excerpt">I posted the video like it was any other post. I woke up at 2am to a comment section at war. What followed was a lesson in food, culture, and why getting the story right matters — and a recipe for Nairobian Bhajia that started it all.</p>
+                <a href="bhajia.html" class="story-link">Read More →</a>
+            </div>
         </div>
 
-        <div class="story-item">
-            <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
-            <h2 class="story-title">Oven-Baked Whole Tilapia with Crispy Cassava Fries and Kachumbari</h2>
-            <p class="story-excerpt">A Kisumu staple made without the deep fryer — whole tilapia roasted until the skin crisps, served with cassava fries and a palate-refreshing kachumbari. The kind of food you eat with your hands and don't care who sees you.</p>
-            <a href="tilapia.html" class="story-link">Read More →</a>
+        <div class="story-item reveal">
+            <a href="tilapia.html" class="story-thumb" tabindex="-1" aria-hidden="true">
+                <img src="images/tilapia.png" alt="" loading="lazy">
+            </a>
+            <div class="story-body">
+                <span class="story-tag">Recipe & Narrative · Road to Kisumu</span>
+                <h2 class="story-title">Oven-Baked Whole Tilapia with Crispy Cassava Fries and Kachumbari</h2>
+                <p class="story-excerpt">A Kisumu staple made without the deep fryer — whole tilapia roasted until the skin crisps, served with cassava fries and a palate-refreshing kachumbari. The kind of food you eat with your hands and don't care who sees you.</p>
+                <a href="tilapia.html" class="story-link">Read More →</a>
+            </div>
         </div>
 
-        <div class="story-item">
-            <span class="story-tag">Food Culture Essay</span>
-            <h2 class="story-title">Ugali: A Kenyan Staple</h2>
-            <p class="story-excerpt">A deep dive into the cultural history of Kenya's most beloved dish — from colonial roots to Pan-African identity. More than food, ugali is a statement.</p>
-            <a href="ugali.html" class="story-link">Read More →</a>
+        <div class="story-item reveal">
+            <a href="ugali.html" class="story-thumb" tabindex="-1" aria-hidden="true">
+                <img src="images/ugali.png" alt="" loading="lazy">
+            </a>
+            <div class="story-body">
+                <span class="story-tag">Food Culture Essay</span>
+                <h2 class="story-title">Ugali: A Kenyan Staple</h2>
+                <p class="story-excerpt">A deep dive into the cultural history of Kenya's most beloved dish — from colonial roots to Pan-African identity. More than food, ugali is a statement.</p>
+                <a href="ugali.html" class="story-link">Read More →</a>
+            </div>
         </div>
 
-
-        <div class="story-item">
-            <span class="story-tag">Recipe & Narrative</span>
-            <h2 class="story-title">Smoked Turkey: A Holiday Tradition Reimagined</h2>
-            <p class="story-excerpt">From childhood smoked drumsticks at the fair to smoking a 20lb bird for the holidays — the personal story behind a recipe that now has people calling every Thanksgiving and Christmas.</p>
-            <a href="smoked-turkey.html" class="story-link">Read More →</a>
+        <div class="story-item reveal">
+            <a href="smoked-turkey.html" class="story-thumb" tabindex="-1" aria-hidden="true">
+                <img src="images/smoked-turkey.png" alt="" loading="lazy">
+            </a>
+            <div class="story-body">
+                <span class="story-tag">Recipe & Narrative</span>
+                <h2 class="story-title">Smoked Turkey: A Holiday Tradition Reimagined</h2>
+                <p class="story-excerpt">From childhood smoked drumsticks at the fair to smoking a 20lb bird for the holidays — the personal story behind a recipe that now has people calling every Thanksgiving and Christmas.</p>
+                <a href="smoked-turkey.html" class="story-link">Read More →</a>
+            </div>
         </div>
 
     </div>
