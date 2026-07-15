@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Grams (Ndengu) — Dumela Press</title>
+    <meta name="theme-color" content="#171512">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171512'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%232b97a6' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Dumela Press</a>
+        </div>
+        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">Meet The Author</a>
+            <a href="stories.html">All Stories</a>
+            <a href="index.html#contact">Contact Info</a>
+        </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <div class="article">
+
+        <a href="stories.html" class="back-link">← All Stories</a>
+
+        <img src="images/green-grams.png" alt="A bowl of Green Grams (Ndengu) stew topped with fanned avocado slices and fresh mint" class="article-image">
+
+        <h1 class="article-title">Green Grams (Ndengu)</h1>
+        <p class="article-tag">Recipe & Narrative · East African Classics</p>
+
+        <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/green-grams.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Green Grams (Ndengu)</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
+
+       <p>What can grow from necessity will amaze you. Imagine a crop brought over to Kenya by Asian traders, then being adopted as a staple food crop, then we witness nature getting involved. Due to climate change, we saw many crops rendered unstable, but this miracle little bean remains productive and even thrives in adverse conditions, outpacing other established crops to readiness to harvest thus becoming a sought after crop to sustain many families, so much so that when Kenya faced erratic weather and prolonged drought seasons the Government and Agricultural agencies identified it as a strategic crop for families to grow. Now imagine that same crop seeing a boom in the 2010s becoming a major income generating crop especially in counties like Kitui, Makueni, Machakos, and Tharaka Nithi, which to this day account for the vast majority of Kenya's production of Green Grams, known locally as Ndengu. Also leading an international export boom, sending the crop to markets across Asia and the Middle East, with an industry valued in the multi billion shillings.</p>
+
+        <p>That's a very brief, but informative history on a legume that many Kenyans have grown to love, whether cooked as a stew alongside Chapatis or paired with Mukimo it is a favorite on many plates throughout the nation and around the world.</p>
+
+        <p>My introduction came from a very good friend. We used to share recipes and talk about dishes and she had stories about her grandma cooking many foods, but she held a particularly special place in her heart for grandma's Mukimo and Green Grams. She recalled racing home to help her prepare supper often and her favorite time with grandma in the kitchen was Green Gram night. For them like many other families it was a crop they grew and harvested for their stocks. I remember first seeing the beans. No local grocer had them — I had to order online, and that 2lb bag cost me $17. Something about that little green bean reminded me of a bug, I thought they were funny looking, but I took her recipe and prepared Green Gram stew and I understood immediately why she loved it so much. It's now a dish I make regularly and it makes me feel closer to home.</p>
+
+        <h2 class="recipe-title">Ingredients</h2>
+
+        <h3 class="recipe-subtitle">Green Grams (Ndengu)</h3>
+        <ul class="recipe-list">
+            <li>1 lb whole mung beans (Green Grams), soaked overnight</li>
+            <li>1 large onion, diced</li>
+            <li>1 large bell pepper, diced</li>
+            <li>2 cans fire-roasted diced tomatoes (or 2 fresh tomatoes, diced)</li>
+            <li>1 head garlic, minced</li>
+            <li>Celery, diced</li>
+            <li>Parsley, chopped</li>
+            <li>Carrots, grated</li>
+            <li>2 tbsp chicken bouillon powder</li>
+            <li>1 tbsp onion powder</li>
+            <li>1 tbsp garlic powder</li>
+            <li>1 tbsp curry powder</li>
+            <li>1 tsp garam masala</li>
+        </ul>
+
+        <h2 class="recipe-title">Method</h2>
+
+        <p>Soak the mung beans overnight. Dice your onion, garlic, celery, and parsley; grate the carrots.</p>
+
+        <p>In a pot, heat oil and add the onion, garlic, celery, bell pepper, and parsley. Cook, stirring, until the onions turn golden brown.</p>
+
+        <p>Add the grated carrots and rinsed mung beans, stirring to coat. Add the diced tomatoes, chicken bouillon, onion powder, garlic powder, curry powder, and garam masala.</p>
+
+        <p>Stir well, add water to cover, and let simmer for 2 hours, or until the mung beans are tender. Serve with your favorite side dish, options include Mukimo, Chapatis, Avocado, or whatever you favor.</p>
+
+        <h2 class="recipe-title">Closing</h2>
+
+        <p>For me Green Gram night doesn't need any particular occasion. I'll make it on a random Tuesday because I was craving it, somehow it feels familiar, like a home I have yet to settle in. My friend's grandmother spent a lifetime turning this little bean into something worth racing home for, and every time I make it, I understand a little more of what that racing felt like. I never got to sit in her kitchen, but I like to think this pot I stir, however many miles and years removed, is still hers.</p>
+
+        <p class="recipe-note">— Chef Dumela</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+        <p>© 2026 Dumela Press · richard@dumelapress.com</p>
+        <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>
