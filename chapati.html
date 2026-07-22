@@ -35,6 +35,45 @@
 
         <h1 class="article-title">Chapati, or: Why Are You Rushing, Bro?</h1>
         <p class="article-tag">Recipe & Narrative · Road to Kisumu Series</p>
+        <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/chapati.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Chapati, or: Why Are You Rushing, Bro?</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
 
        <p>This one took a long time to get right. I remember in the beginning I'd get frustrated, I remember throwing out whole batches of dough. I remember the sticky batch that was impossible to work with and I remember almost giving up. There were a few reasons for my failures, and I failed to the point that they began to become good failures — I was beginning to come away from the process with a result that was edible, usable, but it wasn't a flaky, layered, East African Chapati, or Chapo as the Gen Z call them.</p>
 
@@ -97,5 +136,6 @@
         <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
     </footer>
     <script src="script.js"></script>
+    <script src="audio-player.js"></script>
 </body>
 </html>

@@ -35,6 +35,45 @@
 
         <h1 class="article-title">Oven-Baked Whole Tilapia with Crispy Cassava Fries and Kachumbari</h1>
         <p class="article-tag">Recipe & Narrative · Road to Kisumu Series</p>
+        <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/oven-baked-tilapia.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Oven-Baked Whole Tilapia</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
 
         <p>There are certain meals that don't ask for attention, they reach out and grab it like the last slice of pizza on game night. Such meals don't land on your plate for show, they're not fancy or even always Instagram worthy, but they have gained their place with the people familiar with them. For the people that call it theirs it will always hit close to the heart. This is such a dish. Not particularly fancy, not expensive, or meant for special occasions, but rather familiar and even a staple in Luo land.</p>
 
@@ -124,6 +163,7 @@
         <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
     </footer>
     <script src="script.js"></script>
+    <script src="audio-player.js"></script>
 
 </body>
 </html>

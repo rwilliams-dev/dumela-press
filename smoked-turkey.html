@@ -36,6 +36,45 @@
 
             <h1 class="article-title">Smoked Turkey</h1>
             <p class="article-tag">Recipe & Narrative</p>
+            <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/smoked-turkey.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Smoked Turkey</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
 
 <p>My introduction to smoked turkey didn't start with a whole bird — it started with smoked tails and drumsticks. Growing up, my mother would add them to greens and beans, and the flavor they left behind was something I never forgot. Then came the fair turkey legs, smoky and charred at the edges, impossible to put down. That smoke was always in my DNA.</p>
 <p>In 2018 I got my first smoker and started experimenting with meat. Then one day a YouTube video changed everything — a guy smoking a whole turkey spatchcock style for the holidays. I'd never considered it before, but the next day I was at the grocery store with a 20lb bird, a brine kit, and a creole butter injection kit in my cart.</p>
@@ -70,5 +109,6 @@
     <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
 </footer>
     <script src="script.js"></script>
+    <script src="audio-player.js"></script>
     </body>
 </html>

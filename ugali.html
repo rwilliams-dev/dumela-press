@@ -35,6 +35,45 @@
 
             <h1 class="article-title">Ugali: A Kenyan Staple</h1>
             <p class="article-tag">Food Culture Essay</p>
+            <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/ugali.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Ugali: A Kenyan Staple</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
             <p>Come on a journey with me as we explore the story of the Kenyan staple we call Ugali. This is a food deeply rooted in Kenyan culture and served multiple times a week in most Kenyan homes. Let's dive into the story behind this traditional Kenyan favorite and find out why it has been affectionately stated that "Ugali is life!" Njoo Tule Rafiki Wangu.
 This may be hard to believe, but there was a time in Kenya when Ugali was not the staple food that it is today. Colonialism brought many things to Africa on those ships. One of those things was maize. Before that, local grains like millet and sorghum were deeply rooted in African farming traditions — drought resistant and indigenous to the lands. This shift to a new staple from the Americas was encouraged by the British, sometimes forcefully, and more and more farmers began to transition from indigenous crops to acres and acres of maize. It grew well in the climate and yielded far more produce than the local crops. It's actually a story of how forced dependency on a crop turned into something widely embraced and adopted as their own. We don't want to dwell on colonialism here — although it is part of the history, it's not the story. The story is of resilience and the building of something from nothing.
 Ugali is filling, readily available, and easy to make. It pairs well with stews, vegetables, and even fermented milk. You will find it everywhere you look, from small eateries to high-profile restaurants in Kenya. But the reach goes far beyond Kenya's borders — a form of maize porridge in various tastes and textures can be found in most countries across Africa. In Nigeria it's fufu, though often made with cassava. In Uganda it's posho. In South Africa it's called pap. In Mozambique it's called xima. All with a similar job: keep the people full, affordably.</p>
@@ -74,5 +113,6 @@ My personal history with ugali is short. I first tried it in 2024. A friend taug
     <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
 </footer>
     <script src="script.js"></script>
+    <script src="audio-player.js"></script>
     </body>
 </html>
