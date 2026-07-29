@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop the Meat, Not the Label — Dumela Press</title>
+    <meta name="theme-color" content="#171512">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171512'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%232b97a6' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Dumela Press</a>
+        </div>
+        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">Meet The Author</a>
+            <a href="stories.html">All Stories</a>
+            <a href="index.html#contact">Contact Info</a>
+        </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article">
+
+        <a href="stories.html" class="back-link">← All Stories</a>
+
+        <img src="images/shop-the-meat.png" alt="Smoked beef short ribs with a dark bark, resting on a steel pan" class="article-image">
+
+        <h1 class="article-title">Shop the Meat, Not the Label</h1>
+        <p class="article-tag">Food Investigation · Behind the Label Series</p>
+
+        <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/shop-the-meat.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Shop the Meat, Not the Label</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
+
+      <p>I was at the grocery store the other day, and it hit me how differently people shop. Some move with a plan, non-perishables first, then produce, then meat, very well organized, they move throughout the market with great efficiency. Some walk in with a list and a mission, they know exactly what they've come for and they waste very little time. Me? I'm a little chaotic in my approach. No list, no real structure. I wander around, picking up random stuff and putting it back. I sometimes get inspired mid aisle and end up cooking something that I didn't plan on at all. Eventually I'll make my way to the meat section. That's always where I slow down.</p>
+
+        <p>As you walk down the meat aisle you may start noticing the labels. Grass-fed, Antibiotic-free, Pasture-raised, Organic. The prices climb with each claim, like a ladder of virtue. Personally I've cooked it all, high end, budget friendly, and everything in between. If I'm being honest, I can't tell the difference. Not even slightly. So I don't shop for the labels. I shop for the meat.</p>
+
+        <p>I'm looking at color, fat distribution, checking firmness or lack thereof. I check the grain. I'm envisioning the final product on the plate, how the fat will render, how the meat fibers will look when sliced, the shape the meat will take beside our starch and vegetables. Eating is as much about the look as it is about the taste sometimes. So for me, the label is secondary.</p>
+
+        <p>Now if a client asks for something specific, sure I'll grab the grass-fed. But on my own time, I'm choosing what looks right. That day, though, I overheard a conversation that stuck with me. A guy explaining to someone, confidently, why grass-fed beef is better, healthier, cleaner, and more "real." The kind of certainty that makes you pause, even if you've been in kitchens long enough to trust your instincts. Maybe I'm wrong, I've definitely been wrong before. So I went home and started digging. What I found wasn't exactly surprising, but it was revealing.</p>
+
+        <p>Back in 2015, Congress repealed mandatory Country of Origin Labeling for beef. After that, imported beef could legally be labeled "Product of USA" as long as something happened to it here, grinding, slicing, repackaging. The animal could be born, raised, and slaughtered somewhere else entirely, and still end up carrying an American label. That changed at the start of 2026. Now, if something says "Product of USA," it has to be born, raised, slaughtered, and processed here. That's a real shift, but there's a catch. Origin labeling is still voluntary.</p>
+
+        <p>So while companies can't make a false claim anymore, they also don't have to tell you anything at all. If there's no label, you're back to guessing. The system removed one kind of confusion, but it didn't replace it with clarity. Then there's "grass-fed." It sounds precise. It sounds like a standard, but it's not, at least not in the way most people think. It's a marketing claim, not a universally enforced certification. There's no single, consistent inspection behind every package that says it.</p>
+
+        <p>And here's where it gets even more interesting, a lot of what's labeled grass-fed is actually grass-fed, and grain-finished. Which is most cattle. So if you've ever felt like it tastes the same, like you can't quite pick up the difference everyone talks about, you're not crazy. It might actually be the same, or close enough that the label is doing more work than the meat itself.</p>
+
+        <p>There are stricter certifications out there. Some producers follow tighter standards. But those are the exceptions, not the baseline.</p>
+
+        <p>Standing in that grocery store, I realized something simple. I'd been trusting my eyes and my hands more than the label for years, not out of principle, just instinct, and instinct, in this case, was closer to the truth than I thought.</p>
+
+        <p>Because at the end of the day, the label tells a story. Not always a lie, but not always the full truth either. It's a layer, branding, marketing, sometimes aspiration. The meat is still the meat, and as a chef, that's what I'm working with. That's what hits the pan. That is what ends up on the plate.</p>
+
+        <p>So I'll keep shopping the way I shop, a little chaotic, a little intuitive, building meals in real time. I'll keep looking for good color, good fat, and good structure. I'll still honor a request when it matters, but I won't pretend the label is something it's not. Because sometimes the difference you're looking for isn't in the claim printed on the package. It's in how closely you're actually paying attention.</p>
+
+        <p class="recipe-note">— Chef Dumela</p>
+      </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+        <p>© 2026 Dumela Press · richard@dumelapress.com</p>
+        <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>
