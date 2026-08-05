@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between Kenya and My Cupboard — Dumela Press</title>
+    <meta name="theme-color" content="#171512">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171512'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%232b97a6' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Dumela Press</a>
+        </div>
+        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">Meet The Author</a>
+            <a href="stories.html">All Stories</a>
+            <a href="index.html#contact">Contact Info</a>
+        </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article">
+
+        <a href="stories.html" class="back-link">← All Stories</a>
+
+        <img src="images/between-kenya.png" alt="A cupboard shelf lined with boxes of packaged tea" class="article-image">
+
+        <h1 class="article-title">Between Kenya and My Cupboard</h1>
+        <p class="article-tag">Food Investigation · Behind the Label Series</p>
+
+        <div class="dp-player" id="essay-player">
+  <audio preload="metadata">
+    <source src="audio/between-kenya.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dp-player__head">
+    <div class="dp-art"><span class="dp-art__mono">D</span></div>
+    <div class="dp-player__meta">
+      <p class="dp-player__label">Listen · Read by the author</p>
+      <p class="dp-player__title">Between Kenya and My Cupboard</p>
+      <p class="dp-player__narrator">Narrated by Chef Dumela</p>
+    </div>
+    <span class="dp-player__duration dp-time-total-chip">–:––</span>
+  </div>
+
+  <div class="dp-wave">
+    <canvas aria-hidden="true"></canvas>
+    <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through narration">
+  </div>
+
+  <div class="dp-player__row">
+    <button class="dp-skip" data-skip="-15" aria-label="Back 15 seconds">−15s</button>
+    <button class="dp-play" aria-label="Play">
+      <svg class="dp-icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="dp-icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z"/>
+      </svg>
+    </button>
+    <button class="dp-skip" data-skip="15" aria-label="Forward 15 seconds">+15s</button>
+    <button class="dp-speed" aria-label="Playback speed">1×</button>
+    <div class="dp-player__times">
+      <span class="dp-time-current">0:00</span>
+      <span>/</span>
+      <span class="dp-time-total">–:––</span>
+    </div>
+  </div>
+</div>
+
+      <p>Standing here in my kitchen, looking at a shelf full of tea, trying to decide which to brew. Tea is a passion for me, I drink it every day, often more than once, and I've built up a nice variety of flavors and types to choose from. Black tea. Red tea. Spiced chai. Holiday varieties. Limited runs. You name it, and there's a good chance it has passed through these cupboards, been steeped in one of these cups, and been sipped while I gazed out one of these windows, sitting up late studying, or on those long calls to the ones I hold dear. As faith would have it, as I've learned more about Kenya, I've come across the love of tea, or chai that runs deep there. Kenya is among the biggest growers and exporters of tea in the world. So why is it that when I look through my collection, none of the labels say Kericho? No box says Kisii. No farmer's names. No factory. Just branding, British sounding names, soft colors, words like "premium blend." Somewhere between Kenya and my cupboard the word Kenya disappeared. That's not me being a careless buyer. That's the system doing exactly what it was built to do.</p>
+
+        <p>Kenya is one of the largest exporters of black tea in the world, moving massive volumes through the Mombasa auction every year. Most of that tea leaves the country the same way: loose, unbranded, and destined to be blended. Only a small fraction, roughly 5%, by some estimates leaves as a finished, value added product like packaged tea bags. The rest is built for a different stage of the chain and that stage has an address.</p>
+
+        <p>Tea leaves Kenya, gets bought by global traders, and a significant portion moves into a system anchored in places like Dubai. The Dubai Multi Commodities Centre (DMCC) runs one of the most important tea hubs in the world. Storage, blending, packaging, and re-export all in one place. Inside that system, facilities like the Dubai Tea Trading Centre handle tens of thousands of tons a year, turning bulk shipments into finished retail products. Unilever's Lipton factory in the Jebel Ali free zone has been reported running more than two million tea bags an hour, around the clock. Companies you already know sit inside that loop. Finlays operates across Kenya and Dubai, sourcing, blending, and distributing tea globally. Van Rees, a major tea trading multinational, works the same channels, buying at the Mombasa auction, blending, packing for export. Lipton, the corporate descendant of Brooke Bond that built the Kericho estates under colonial rule, sold off those East African estates in 2024 but still sources Kenyan leaf to blend and sell; its PG Tips line is predominantly Kenyan grown. Even KTDA, which represents more than 600,000 Kenyan smallholder farmers, feeds into a system where most tea still exits as bulk before identity is attached.</p>
+
+        <p>So the loop looks like this. Tea is grown in Kericho or Kisii. Sold through Mombasa. Bought by multinational traders. Shipped to Dubai. Blended with tea from India or Sri Lanka. Standardized. Packed into tea bags. Branded. Then shipped back out to the world. Including me. That's why brands on U.S. shelves, Lipton, Twinings, Tetley, and store labels, almost all rely on multi origin blends where Kenyan tea plays a specific role. It gives color, strength, and consistency. It's engineered for that. It's in the cup. It's just not on the label, and that's where the money shifts.</p>
+
+        <p>Tea is one of Kenya's biggest export earners, bringing in around $1.7 billion (2024), but bulk tea trades at commodity prices. The real margins show up later, in blending, packaging, branding, and distribution. In other words, in the box, not the leaf. That's where value multiplies, and that part of the chain is often happening outside the country. This didn't start as a trade quirk. It started as control. Tea in Kenya was built under colonial rule, on land reserved for settler estates, with Africans largely excluded from growing it commercially in the early years. After independence, smallholder farmers became the backbone of production. That part changed. But the export model, grown here, finished elsewhere, stayed intact.</p>
+
+        <p>So now you have a country producing massive volumes of tea, supporting hundreds of thousands of farmers, and still watching the highest-value part of the product take shape somewhere else. And then there's the part nobody says out loud. Kenya doesn't just export tea, it imports it too. In 2024 it brought in about $48 million worth (OEC). Some of that is other origin leaf destined for blending, so I won't pretend every returning box is Kenya's own crop bought back. But follow the split that's undeniable. Bulk tea trades at auction for commodity prices; blended, packaged, branded tea sells for a multiple of that, and increasingly that premium version is sold inside Kenya. KETEPA's packaged tea commands far more per kilo than the raw CTC leaving Mombasa. In early 2026, the agribusiness firm Kakuzi launched a domestic brand pitched on selling Kenyans the export grade leaf that normally ships out. So a country can grow the tea, process the tea, and export the tea, and then watch the finished, named, marked up version come home as the premium product. The leaf was always ours. The value got added somewhere else, and now it's sold back to us wearing a price tag.</p>
+
+        <p>Right now, this is something I notice in my cupboard. Soon, it won't be. I'm planning on moving to Kisumu. Building a life there. Cooking there. And Kisumu sits within reach of some of the best tea growing land on earth. So the question changes.</p>
+
+        <p>Right now, I'm asking why I can't find Kenyan tea in the Bay Area. Soon, I'll be asking what stops me from finding it at the source. Because if I'm pouring chai on the edge of Lake Victoria, water, milk, ginger, cardamom, tea, I should know where that tea came from. Not just the country, but the factory, the cooperative, the people.</p>
+
+        <p>And if I don't, then the loop didn't break.</p>
+
+        <p>It followed me.</p>
+
+        <p class="recipe-note">— Chef Dumela</p>
+      </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+        <p>© 2026 Dumela Press · richard@dumelapress.com</p>
+        <p>Global Food Culture · Brand Storytelling · Culinary Narrative</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>
