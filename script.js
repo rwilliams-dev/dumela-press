@@ -66,6 +66,26 @@ if (navbar) {
     onScroll();
 }
 
+// Reading progress bar — article pages only
+const articleEl = document.querySelector('.article');
+if (articleEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const bar = document.createElement('div');
+    bar.className = 'read-progress';
+    document.body.appendChild(bar);
+
+    const updateProgress = () => {
+        const rect = articleEl.getBoundingClientRect();
+        const total = rect.height - window.innerHeight;
+        const scrolled = -rect.top;
+        const pct = total > 0 ? Math.min(Math.max(scrolled / total, 0), 1) : 0;
+        bar.style.transform = 'scaleX(' + pct + ')';
+    };
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress, { passive: true });
+    updateProgress();
+}
+
 // Scroll reveal
 const revealEls = document.querySelectorAll('.reveal');
 if (revealEls.length && 'IntersectionObserver' in window) {

@@ -58,7 +58,7 @@
         const x = i * (BAR_W + BAR_GAP);
         const p = peaks ? peaks[Math.floor((i / count) * peaks.length)] : 0.28;
         const bh = Math.max(3, p * (h - 10));
-        ctx2d.fillStyle = x < playedX ? "#e0b968" : "rgba(255,255,255,0.22)";
+        ctx2d.fillStyle = x < playedX ? "#eecb8a" : "rgba(255,255,255,0.34)";
         ctx2d.beginPath();
         ctx2d.roundRect(x, mid - bh / 2, BAR_W, bh, 1.5);
         ctx2d.fill();
