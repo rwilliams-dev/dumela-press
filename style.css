@@ -1462,3 +1462,19 @@ footer {
     transform: none;
   }
 }
+
+/* Visually hidden, but present for screen readers and crawlers. Used to give
+   the "Read More" links descriptive anchor text without changing the design:
+   Lighthouse's link-text audit is an SEO check and reads real anchor text,
+   not aria-label. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
