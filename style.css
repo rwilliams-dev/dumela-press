@@ -391,9 +391,27 @@ section[id] {
   border-bottom: 1px solid var(--paper-edge);
 }
 
+/* Portrait beside the bio. The grid is sized so the text column lands on
+   --measure exactly — the portrait widens the section, not the line length. */
 .about-content {
-  max-width: var(--measure);
+  max-width: calc(var(--measure) + 260px + 52px);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 52px;
+  align-items: start;
+}
+
+.about-portrait {
+  margin: 0;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 24px 50px -30px rgba(28, 26, 22, 0.45);
 }
 
 .about .section-title {
@@ -957,6 +975,15 @@ footer::before {
     width: 100%;
     padding: 14px 4px 8px;
     gap: 2px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-portrait {
+    max-width: 200px;
   }
 
   .nav-links.open {
