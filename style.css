@@ -391,19 +391,24 @@ section[id] {
   border-bottom: 1px solid var(--paper-edge);
 }
 
-/* Portrait beside the bio. The grid is sized so the text column lands on
-   --measure exactly — the portrait widens the section, not the line length. */
 .about-content {
-  max-width: calc(var(--measure) + 260px + 52px);
+  max-width: var(--measure);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 52px;
-  align-items: start;
+}
+
+/* Portrait nested into the copy rather than sitting in its own column, so
+   the text closes back over it instead of leaving a gap alongside. */
+.about-content::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .about-portrait {
-  margin: 0;
+  float: left;
+  width: 220px;
+  margin: 6px 30px 14px 0;
+  shape-margin: 30px;
 }
 
 .about-portrait img {
@@ -977,13 +982,11 @@ footer::before {
     gap: 2px;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
+  /* Too narrow to wrap text beside a float — portrait sits above the copy. */
   .about-portrait {
-    max-width: 200px;
+    float: none;
+    width: 190px;
+    margin: 0 0 26px;
   }
 
   .nav-links.open {
