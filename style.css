@@ -982,11 +982,11 @@ footer::before {
     gap: 2px;
   }
 
-  /* Too narrow to wrap text beside a float — portrait sits above the copy. */
+  /* Keeps wrapping on phones, at a smaller size so the lines beside it
+     still hold a few words. */
   .about-portrait {
-    float: none;
-    width: 190px;
-    margin: 0 0 26px;
+    width: 150px;
+    margin: 4px 18px 10px 0;
   }
 
   .nav-links.open {
@@ -1514,4 +1514,15 @@ footer {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Below this the column is too narrow to wrap text beside the portrait at
+   all — roughly two words per line — so it stacks. Appended last so it wins
+   over the 768px rule. */
+@media (max-width: 360px) {
+  .about-portrait {
+    float: none;
+    width: 160px;
+    margin: 0 0 22px;
+  }
 }
